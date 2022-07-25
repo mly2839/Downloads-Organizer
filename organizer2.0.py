@@ -1,3 +1,7 @@
+import base64
+
+code = base64.b64encode(b"""
+
 import os
 import shutil
 import sys
@@ -6,7 +10,6 @@ import logging
 from pathlib import Path
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-
 
 # Author: Michael Ly
 # Date: 7/25/2022
@@ -28,7 +31,7 @@ if not os.path.exists(dest_dir_exe):
 dest_dir_pdf = downloads_path + "pdf"
 if not os.path.exists(dest_dir_pdf):
     os.makedirs(dest_dir_pdf)
-dest_dir_vid = downloads_path + "\videos"
+dest_dir_vid = downloads_path + "\ videos"
 if not os.path.exists(dest_dir_vid):
     os.makedirs(dest_dir_vid)
 dest_dir_mic = downloads_path + "\microsoft365"
@@ -120,3 +123,7 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
+
+""")
+
+exec(base64.b64decode(code))

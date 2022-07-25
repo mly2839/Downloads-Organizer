@@ -14,7 +14,7 @@ Organizes your downloads folder to separate subfolders based on the type of file
 - Run 'pip install watchdog' or 'pip3 install watchdog' if on python 3.x
 - Edit the downloads folder path and the destination paths properly
 - Adjust/Add/Remove any file extensions you want
-- Run by typing 'python organizer.py' or 'python3 organizer.py' if on python 3.x
+- Run by typing 'python organizer2.0.py' or 'python3 organizer2.0.py' if on python 3.x
 
 This process will run continuously on the editor that you start it on until you kill it using CTRL + C
 
@@ -27,5 +27,11 @@ Runs this script in the background
 - Run 'python -m pip install pythonw' or 'python3 -m pip3 install pythonw' if on python 3.x
 - Edit the downloads folder path and the destination paths properly
 - Adjust/Add/Remove any file extensions you want
-- Run by typing 'pythonw organizer.pyw'
+- Run by typing 'pythonw organizer2.0.pyw'
 - End task by running 'TASKKILL /F /IM pythonw.exe' on an elevated command line
+
+## imports
+
+- watchdog
+- pythonw
+- auto-py-to-exe

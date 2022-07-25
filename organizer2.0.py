@@ -9,7 +9,7 @@ from watchdog.events import FileSystemEventHandler
 
 
 # Author: Michael Ly
-# Date: 7/24/2022
+# Date: 7/25/2022
 # Moves files in the downloads folder to other folders based on the file type
 
 downloads_path = str(Path.home() / "Downloads")
